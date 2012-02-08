@@ -1,93 +1,173 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-02-08 08:29:10
+<?php /* Smarty version Smarty-3.0.7, created on 2012-02-08 14:13:03
          compiled from "templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4992500024f3278a6d50901-65972314%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2144589204f3282ef299261-77852307%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '90093ad09988b466f409a1871733c5589014713e' => 
     array (
       0 => 'templates/index.tpl',
-      1 => 1306145137,
+      1 => 1328710012,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4992500024f3278a6d50901-65972314',
+  'nocache_hash' => '2144589204f3282ef299261-77852307',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
- 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en-gb">
 
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="keywords" content="<?php echo $_smarty_tpl->getVariable('MetaKeywords')->value;?>
-" />
- <meta name="description" content="<?php echo $_smarty_tpl->getVariable('MetaDescription')->value;?>
-" />  
- <title><?php echo $_smarty_tpl->getVariable('PageTitle')->value;?>
-</title>
- <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" /> 
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>TRGB :: Online Parts Shop</title>
+    <meta name="description" content="">
+    <meta name="author" content="Andrew Phillips <andrew@cbtech.co.uk>">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/trgbstyle.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
 
-<body>
-
-  <div id="wrapper">
-  
-    <div id="header">
-      <a href="/"><img src="/img/trgblogo.png" alt="TRGB Logo" /></a>
-      <h1>TRGB Ltd. Parts Catalogue</h1>
-      <h2>Herald, Spitfire, Vitesse &amp; GT6</h2>
-    </div><!--/header-->
+  <body>
     
-    <div id="content">
-      <p>Thank you for requesting our new catalogue. We aim to keep your Triumph on the road at the most competitive price. Having said that, we DO NOT sell cheap inferior parts. We work on the principle that we will not sell you a part that we would not be happy to use in our own workshops. However, due to the fact that you are running an older car, it is sometimes not possible to obtain the correct part and we may have to supply an alternative to keep you on the road. We can always give current advice on such matters – please ask.</p>
-      <p>We will try harder than anyone else to give you the best service. If you can’t find it then please ask! We are here to help. Finally if you do have a complaint (and every company gets them) please ask for Gary Bates – the buck stops there! He is not always available as he is often out on the road, but your complaint will be dealt with and taken seriously, after all we want you to come back! </p>
-      <h3>Parts are in the following categories:</h3>
-      <div id="navigation">
-        <ol>
-          <li><a href="/parts/accessories/">1. Accessories</a></li>
-          <li><a href="/parts/books/">2. Books</a></li>
-          <li><a href="/parts/bumpers/">3. Bumpers</a></li>
-          <li><a href="/parts/cables/">4. Cables</a></li>
-          <li><a href="/parts/brake-and-clutch-hydraulics/">5. Brake and Clutch Hydraulics</a></li>
-          <li><a href="/parts/clips-and-fasteners/">6. Clips and Fasteners</a></li>
-          <li><a href="/parts/chrome-mirrors-and-fittings/">7. Chrome Mirrors and Fittings </a></li>
-          <li><a href="/parts/engines-and-components/">8. Engines and Components</a></li>
-          <li><a href="/parts/re-chroming-service/">9. Re-Chroming Service</a></li>
-          <li><a href="/parts/fuel-system/">10. Fuel System</a></li>
-          <li><a href="/parts/hoods-hoodbags-and-tonneaus/">11. Hoods, Hoodbags and Tonneaus</a></li>
-          <li><a href="/parts/interior-trim/">12. Interior Trim</a></li>
-          <li><a href="/parts/lights-and-electrical/">13. Lights and Electrical</a></li>
-        </ol>
-        <ol>
-          <li><a href="/parts/chassis-and-bodywork/">14. Chassis and Bodywork</a></li>
-          <li><a href="/parts/radiators-and-cooling/">15. Radiators and Cooling</a></li>
-          <li><a href="/parts/rubber-seals-finishers/">16. Rubber Seals/Finishers</a></li>
-          <li><a href="/parts/service-items/">17. Service Items</a></li>
-          <li><a href="/parts/steering-and-suspension/">18. Steering and Suspension</a></li>
-          <li><a href="/parts/starter-dynamo-alternator/">19. Starter/Dynamo/Alternator</a></li>
-          <li><a href="/parts/transmission-and-clutch/">20. Transmission and Clutch</a></li>
-          <li><a href="/parts/wipers-washers-and-glass/">21. Wipers, Washers and Glass</a></li>
-          <li><a href="/parts/exhausts/">22. Exhausts</a></li>
-          <li><a href="/parts/chemicals/">23. Chemicals</a></li>
-          <li><a href="/parts/badges-and-motifs/">24. Badges and Motifs</a></li>
-          <li><a href="/parts/wheels-and-body-fittings/">25. Wheels and Body Fittings</a></li>
-        </ol>
-      </div><!--/navigation-->
-     <p>Please note that original part numbers are for reference only and do not necessarily mean original supplier. We will be happy to advise on the availability and quality of any part currently available. TRGB Ltd was British Motor Heritage Approved in December 1997 and has always had strong links with the TR Register, advertising in their magazine since the formation of the company and attended every TR Register International meeting as well.</p>
-     <h3>All Prices Listed are Subject to VAT @ 20%</h3>
-    </div><!--/content-->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#" style="font-family: 'Open Sans', sans-serif; line-height: 30px;">
+            TRGB Online Parts Shop
+          </a>
+          <form class="navbar-search pull-right">
+            <<?php ?>?php /*
+            <input type="text" class="search-query" placeholder="Search">
+            <i class="icon-search icon-white"></i>
+            */ ?<?php ?>>
+            <a class="btn" href="#" style="margin-bottom: 10px;"><i class="icon-shopping-cart"></i> Shopping Cart (5 items)</a>           
+          </form>
+        </div>
+      </div>
+    </div>
+        
+    <div class="container">
     
-    <div id="footer">
-      <h6>&copy; 2011 - TRGB Ltd.</h6>
-    </div><!--/footer-->
+    <div class="row">
+      <div class="span12">
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Home</a> <span class="divider">/</span>
+          </li>
+          <li>
+            <a href="#">Triumph TR2, 3, 4, 4A, 5, 6</a> <span class="divider">/</span>
+          </li>
+          <li>
+            <a href="#">Accessories</a> <span class="divider">/</span>
+          </li>
+          <li class="active">
+            <a href="#">DIS-CAR-NECT Battery Clamp (Instantly Disconnects Battery)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+       
+    <div class="row">
+      <div class="span3"> 
+        
+              <form class="well form-search">
+        <input type="text" class="input-small search-query" style="width: 55%" placeholder="Click to search...">
+        <button type="submit" class="btn">Search</button>
+      </form>
+          
+        <ul class="nav nav-tabs nav-stacked">
+          <li><a href="/parts/accessories/">Special Offers<i class="icon-chevron-right pull-right"></i></a></li>
+          <li><a href="/parts/accessories/">Accessories</a></li>
+          <li><a href="/parts/books/">Books</a></li>
+          <li><a href="/parts/bumpers/">Bumpers</a></li>
+          <li><a href="/parts/cables/">Cables</a></li>
+          <li><a href="/parts/brake-and-clutch-hydraulics/">Brake and Clutch Hydraulics</a></li>
+          <li><a href="/parts/clips-and-fasteners/">Clips and Fasteners</a></li>
+          <li><a href="/parts/chrome-mirrors-and-fittings/">Chrome Mirrors and Fittings </a></li>
+          <li><a href="/parts/engines-and-components/">Engines and Components</a></li>
+          <li><a href="/parts/re-chroming-service/">Re-Chroming Service</a></li>
+          <li><a href="/parts/fuel-system/">Fuel System</a></li>
+          <li><a href="/parts/hoods-hoodbags-and-tonneaus/">Hoods, Hoodbags and Tonneaus</a></li>
+          <li><a href="/parts/interior-trim/">Interior Trim</a></li>
+          <li><a href="/parts/lights-and-electrical/">Lights and Electrical</a></li>
+          <li><a href="/parts/chassis-and-bodywork/">Chassis and Bodywork</a></li>
+          <li><a href="/parts/radiators-and-cooling/">Radiators and Cooling</a></li>
+          <li><a href="/parts/rubber-seals-finishers/">Rubber Seals/Finishers</a></li>
+          <li><a href="/parts/service-items/">Service Items</a></li>
+          <li><a href="/parts/steering-and-suspension/">Steering and Suspension</a></li>
+          <li><a href="/parts/starter-dynamo-alternator/">Starter/Dynamo/Alternator</a></li>
+          <li><a href="/parts/transmission-and-clutch/">Transmission and Clutch</a></li>
+          <li><a href="/parts/wipers-washers-and-glass/">Wipers, Washers and Glass</a></li>
+          <li><a href="/parts/exhausts/">Exhausts</a></li>
+          <li><a href="/parts/chemicals/">Chemicals</a></li>
+          <li><a href="/parts/badges-and-motifs/">Badges and Motifs</a></li>
+          <li><a href="/parts/wheels-and-body-fittings/">Wheels and Body Fittings</a></li>
+        </ul>
+      </div><!--/span6-->
+        
+      <div class="span9">
+        <!--Body content-->
+        <table class="table table-striped table-bordered">
+          <tbody>
+          <<?php ?>?php 
+            $i=1; while($i != 20) {
+          ?<?php ?>>
+            <tr>
+              <td class="image" style="width: 100px;">
+                <a href="#"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
+              </td>
+              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="#" style="color:#222;">DIS-CAR-NECT Battery Clamp (Instantly Disconnects Battery)<span style="font-size: 80%; position: absolute; left: 20px; bottom: 20px;">Part #: A60</span></a></td>
+              <td style="padding-top: 20px; text-align: center; font-size: 130%; position:relative;">&pound;6.95<span style="color: #555; font-size:70%; position: absolute; left: 10%; top: 50%;">&pound;8.34<br />(inc. VAT)</span></td>
+              <td style="vertical-align: middle; text-align: center; font-size: 150%;"><a class="btn btn-success" href="#"><i class="icon-shopping-cart icon-white"></i> Add</a></td>
+            </tr>
+          <<?php ?>?php
+          $i++;}
+          ?<?php ?>>
+          </tbody>
+        </table>
+      </div><!--/spansix-->
+      </div><!--/row-->
+      
+      <div class="row">
+        <div class="span12">
+          <footer style="margin-bottom: 20px;"><h6 style="text-align:center;">&copy; 2012 TRGB Ltd, All Rights Reserved &ndash; Website created by <a href="http://www.aphillips.co.uk">Andrew Phillips</a></h6></footer>
+        </div></div>
+      
+    </div><!--/container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/application.js"></script>
   
-  </div><!--/wrapper-->
-
-</body>
-
+  </body>
+  
 </html>
