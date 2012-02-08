@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>TRGB :: Online Parts Shop</title>
+    <title>{$PageTitle}</title>
     <meta name="description" content="">
     <meta name="author" content="Andrew Phillips <andrew@cbtech.co.uk>">
     <!--[if lt IE 9]>
@@ -33,9 +33,20 @@
     
       <div class="hero-unit">
         <h1>Welcome!</h1>
+        <p></p>
         <p>This is our new Online Parts Shop.</p>
         <p>Please select the catalogue you require.</p>
-        <p style="padding-top: 20px;"><a class="btn btn-primary btn-large" href="/tr-catalogue/">Triumph TR2/3/4/4A/5/6 &raquo;</a><span style="padding: 30px;"> OR </span><a class="btn btn-primary btn-large" href="/herald-spitfire-vitesse-gt6-catlogue/">Herald, Spitfire, Vitesse, GT6 &raquo;</a></p>
+        <p style="padding-top: 20px;">
+        <a class="btn btn-primary btn-large" href="/tr-catalogue/" style="font-size: 100%;">
+          Triumph<br /><br />TR4, TR4A, TR250, TR5 &amp; TR6
+        </a>
+        <span style="padding: 30px; font-size: 100%;">
+         OR 
+        </span>
+        <a class="btn btn-primary btn-large" href="/herald-spitfire-vitesse-gt6-catlogue/" style="font-size: 100%;">
+          Triumph<br /><br />Herald, Spitfire, Vitesse, GT6
+        </a>
+        </p>
       </div>
     
       

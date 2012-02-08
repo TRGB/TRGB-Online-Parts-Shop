@@ -1,29 +1,9 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-02-08 22:11:39
-         compiled from "templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5305063164f32f31b45b8d1-75472801%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    '90093ad09988b466f409a1871733c5589014713e' => 
-    array (
-      0 => 'templates/index.tpl',
-      1 => 1328735525,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '5305063164f32f31b45b8d1-75472801',
-  'function' => 
-  array (
-  ),
-  'has_nocache_code' => false,
-)); /*/%%SmartyHeaderCode%%*/?>
 <!DOCTYPE html>
 <html lang="en-gb">
 
   <head>
     <meta charset="utf-8">
-    <title><?php echo $_smarty_tpl->getVariable('PageTitle')->value;?>
-</title>
+    <title>{$PageTitle}</title>
     <meta name="description" content="">
     <meta name="author" content="Andrew Phillips <andrew@cbtech.co.uk>">
     <!--[if lt IE 9]>
@@ -51,30 +31,57 @@ $_smarty_tpl->decodeProperties(array (
         
     <div class="container" style="margin-top: 70px;">
     
-      <div class="hero-unit">
-        <h1>Welcome!</h1>
-        <p></p>
-        <p>This is our new Online Parts Shop.</p>
-        <p>Please select the catalogue you require.</p>
-        <p style="padding-top: 20px;">
-        <a class="btn btn-primary btn-large" href="/tr-catalogue/" style="font-size: 100%;">
-          Triumph<br /><br />TR4, TR4A, TR250, TR5 &amp; TR6
-        </a>
-        <span style="padding: 30px; font-size: 100%;">
-         OR 
-        </span>
-        <a class="btn btn-primary btn-large" href="/herald-spitfire-vitesse-gt6-catlogue/" style="font-size: 100%;">
-          Triumph<br /><br />Herald, Spitfire, Vitesse, GT6
-        </a>
-        </p>
+    <div class="row">
+      <div class="span12">
+        <ul class="breadcrumb">
+          <li>
+            <a href="/">Home</a> <span class="divider">/</span>
+          </li>
+          <li class="active">
+            <a href="/trcatalogue/">Triumph TR4, TR4A, TR250, TR5 &amp; TR6</a>
+          </li>
+        </ul>
       </div>
-    
+    </div>
+       
+    <div class="row">
+      <div class="span3"> 
+        
+              <form class="well form-search">
+        <input type="text" class="input-small search-query" style="width: 55%" placeholder="Click to search...">
+        <button type="submit" class="btn">Search</button>
+      </form>
+          
+        <ul class="nav nav-tabs nav-stacked">
+          {foreach $Categories as $Category}
+          <li><a href="#">{$Category.category_name}<i class="icon-chevron-right pull-right"></i></a></li>
+          {/foreach}     
+        </ul>
+      </div><!--/span6-->
+        
+      <div class="span9">
+        <!--Body content-->
+        <table class="table table-striped table-bordered">
+          <tbody>
+          {foreach $Parts as $Part}
+            <tr>
+              <td class="image" style="width: 100px;">
+                <a href="#"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
+              </td>
+              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="#" style="color:#222;">{$Part.part_name}<span style="font-size: 80%; position: absolute; left: 20px; bottom: 20px;">Part #: {$Part.part_number}</span></a></td>
+              <td style="padding-top: 20px; text-align: center; font-size: 130%; position:relative;">&pound;{$Part.part_price}<span style="color: #555; font-size:70%; position: absolute; left: 10%; top: 50%;">&pound;{$Part.part_pricevat}<br />(inc. VAT)</span></td>
+              <td style="vertical-align: middle; text-align: center; font-size: 150%;"><a class="btn btn-success" href="#"><i class="icon-shopping-cart icon-white"></i> Add</a></td>
+            </tr>
+          {/foreach}
+          </tbody>
+        </table>
+      </div><!--/spansix-->
+      </div><!--/row-->
       
       <div class="row">
         <div class="span12">
           <footer style="margin-bottom: 20px;"><h6 style="text-align:center;">&copy; 2012 TRGB Ltd, All Rights Reserved &ndash; Website created by <a href="http://www.aphillips.co.uk">Andrew Phillips</a></h6></footer>
-        </div>
-      </div>
+        </div></div>
       
     </div><!--/container-->
     
