@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* START STYLES */
+
+body {
+  background: #b8c6df; /* old browsers */
+  background: -moz-linear-gradient(top, #b8c6df 0%, #6d88b7 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8c6df), color-stop(100%,#6d88b7)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#6d88b7',GradientType=0 ); /* ie */
+  font-family: "Verdana", sans-serif;
+  line-height: 130%;
+  font-size: 13px;
+}
+
+#wrapper {
+  position: relative;
+  width: 785px;
+  min-height: 950px;
+  background: #fff;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+#header {
+  width: 765px;
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+
+#header img {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#header h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+#header h2 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+#content p {
+  padding: 5px 30px;
+  clear: both;
+  text-align: justify;
+}
+
+#content img {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#content h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+
+#content ol {
+  width: 50%;
+  float: left;
+}
+
+#content ol li a {
+  height: 30px;
+  display: block;
+  font-size: 16px;
+}
+
+#content table {
+  width: 700px;
+  margin: 0px auto;
+}
+
+#content table tr td {
+  border: 1px solid #D9D9D9;
+  padding: 5px;
+  vertical-align:middle;
+  padding-left:: 5px;
+}
+
+#content table tr.head td {
+  text-align: center;
+  font-weight: bold;
+}
+
+#content table tr td img {
+	vertical-align: middle;
+	padding: 2px;
+	border: 1px solid #BDBEBD;
+	margin: 0px auto;
+	height: 45px;
+	width: 45px;
+}
+
+#content table tr td img.plusminus {
+	vertical-align: middle;
+	padding: 0px;
+	border: 0;
+	margin: 0px auto;
+	height: 16px;
+	width: 16px;
+	float: left;
+	margin: 0px 10px;
+}
+
+span.floatleft {
+  float: left;
+}
+
+#content table tr td.price {
+  text-align:center;
+}
+
+#content table tr td.add {
+  text-align: center;
+}
+
+#content table tr td.nb {
+  border: 0;
+}
+
+div#placeorder h3 {
+  text-align: center;
+  color: #fff;
+  background: navy;
+  width: 150px;
+  border: 1px solid black;
+  float: right;
+  margin-top: 30px;
+  margin-right: 42px;
+}
+
+div#placeorder h3 a {
+  color: #fff;
+  font-weight: normal;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+}
+
+
+div#navigation {
+  width: 665px;
+  margin: 0px auto;
+  padding-left: 100px;
+}
+
+div#footer {
+  clear: both;
+  padding: 20px;
+}
+
+div#footer h6 {
+  text-align: center;
+  font-weight: bold;
+}
