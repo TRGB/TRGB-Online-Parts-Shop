@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-02-08 14:13:03
+<?php /* Smarty version Smarty-3.0.7, created on 2012-02-08 19:35:16
          compiled from "templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2144589204f3282ef299261-77852307%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17865578084f32ce74419787-83758834%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '90093ad09988b466f409a1871733c5589014713e' => 
     array (
       0 => 'templates/index.tpl',
-      1 => 1328710012,
+      1 => 1328729638,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2144589204f3282ef299261-77852307',
+  'nocache_hash' => '17865578084f32ce74419787-83758834',
   'function' => 
   array (
   ),
@@ -31,11 +31,6 @@ $_smarty_tpl->decodeProperties(array (
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/trgbstyle.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
   </head>
@@ -45,106 +40,29 @@ $_smarty_tpl->decodeProperties(array (
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#" style="font-family: 'Open Sans', sans-serif; line-height: 30px;">
+          <a class="brand" href="#" style="line-height: 30px;">
             TRGB Online Parts Shop
           </a>
-          <form class="navbar-search pull-right">
-            <<?php ?>?php /*
-            <input type="text" class="search-query" placeholder="Search">
-            <i class="icon-search icon-white"></i>
-            */ ?<?php ?>>
-            <a class="btn" href="#" style="margin-bottom: 10px;"><i class="icon-shopping-cart"></i> Shopping Cart (5 items)</a>           
-          </form>
+            <a class="btn pull-right" href="#" style="margin-top: 10px;"><i class="icon-shopping-cart"></i> Shopping Cart</a>           
         </div>
       </div>
     </div>
         
-    <div class="container">
+    <div class="container" style="margin-top: 70px;">
     
-    <div class="row">
-      <div class="span12">
-        <ul class="breadcrumb">
-          <li>
-            <a href="#">Home</a> <span class="divider">/</span>
-          </li>
-          <li>
-            <a href="#">Triumph TR2, 3, 4, 4A, 5, 6</a> <span class="divider">/</span>
-          </li>
-          <li>
-            <a href="#">Accessories</a> <span class="divider">/</span>
-          </li>
-          <li class="active">
-            <a href="#">DIS-CAR-NECT Battery Clamp (Instantly Disconnects Battery)</a>
-          </li>
-        </ul>
+      <div class="hero-unit">
+        <h1>Welcome!</h1>
+        <p>This is our new Online Parts Shop.</p>
+        <p>Please select the catalogue you require.</p>
+        <p style="padding-top: 20px;"><a class="btn btn-primary btn-large" href="/tr-catalogue/">Triumph TR2/3/4/4A/5/6 &raquo;</a><span style="padding: 30px;"> OR </span><a class="btn btn-primary btn-large" href="/herald-spitfire-vitesse-gt6-catlogue/">Herald, Spitfire, Vitesse, GT6 &raquo;</a></p>
       </div>
-    </div>
-       
-    <div class="row">
-      <div class="span3"> 
-        
-              <form class="well form-search">
-        <input type="text" class="input-small search-query" style="width: 55%" placeholder="Click to search...">
-        <button type="submit" class="btn">Search</button>
-      </form>
-          
-        <ul class="nav nav-tabs nav-stacked">
-          <li><a href="/parts/accessories/">Special Offers<i class="icon-chevron-right pull-right"></i></a></li>
-          <li><a href="/parts/accessories/">Accessories</a></li>
-          <li><a href="/parts/books/">Books</a></li>
-          <li><a href="/parts/bumpers/">Bumpers</a></li>
-          <li><a href="/parts/cables/">Cables</a></li>
-          <li><a href="/parts/brake-and-clutch-hydraulics/">Brake and Clutch Hydraulics</a></li>
-          <li><a href="/parts/clips-and-fasteners/">Clips and Fasteners</a></li>
-          <li><a href="/parts/chrome-mirrors-and-fittings/">Chrome Mirrors and Fittings </a></li>
-          <li><a href="/parts/engines-and-components/">Engines and Components</a></li>
-          <li><a href="/parts/re-chroming-service/">Re-Chroming Service</a></li>
-          <li><a href="/parts/fuel-system/">Fuel System</a></li>
-          <li><a href="/parts/hoods-hoodbags-and-tonneaus/">Hoods, Hoodbags and Tonneaus</a></li>
-          <li><a href="/parts/interior-trim/">Interior Trim</a></li>
-          <li><a href="/parts/lights-and-electrical/">Lights and Electrical</a></li>
-          <li><a href="/parts/chassis-and-bodywork/">Chassis and Bodywork</a></li>
-          <li><a href="/parts/radiators-and-cooling/">Radiators and Cooling</a></li>
-          <li><a href="/parts/rubber-seals-finishers/">Rubber Seals/Finishers</a></li>
-          <li><a href="/parts/service-items/">Service Items</a></li>
-          <li><a href="/parts/steering-and-suspension/">Steering and Suspension</a></li>
-          <li><a href="/parts/starter-dynamo-alternator/">Starter/Dynamo/Alternator</a></li>
-          <li><a href="/parts/transmission-and-clutch/">Transmission and Clutch</a></li>
-          <li><a href="/parts/wipers-washers-and-glass/">Wipers, Washers and Glass</a></li>
-          <li><a href="/parts/exhausts/">Exhausts</a></li>
-          <li><a href="/parts/chemicals/">Chemicals</a></li>
-          <li><a href="/parts/badges-and-motifs/">Badges and Motifs</a></li>
-          <li><a href="/parts/wheels-and-body-fittings/">Wheels and Body Fittings</a></li>
-        </ul>
-      </div><!--/span6-->
-        
-      <div class="span9">
-        <!--Body content-->
-        <table class="table table-striped table-bordered">
-          <tbody>
-          <<?php ?>?php 
-            $i=1; while($i != 20) {
-          ?<?php ?>>
-            <tr>
-              <td class="image" style="width: 100px;">
-                <a href="#"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
-              </td>
-              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="#" style="color:#222;">DIS-CAR-NECT Battery Clamp (Instantly Disconnects Battery)<span style="font-size: 80%; position: absolute; left: 20px; bottom: 20px;">Part #: A60</span></a></td>
-              <td style="padding-top: 20px; text-align: center; font-size: 130%; position:relative;">&pound;6.95<span style="color: #555; font-size:70%; position: absolute; left: 10%; top: 50%;">&pound;8.34<br />(inc. VAT)</span></td>
-              <td style="vertical-align: middle; text-align: center; font-size: 150%;"><a class="btn btn-success" href="#"><i class="icon-shopping-cart icon-white"></i> Add</a></td>
-            </tr>
-          <<?php ?>?php
-          $i++;}
-          ?<?php ?>>
-          </tbody>
-        </table>
-      </div><!--/spansix-->
-      </div><!--/row-->
+    
       
       <div class="row">
         <div class="span12">
           <footer style="margin-bottom: 20px;"><h6 style="text-align:center;">&copy; 2012 TRGB Ltd, All Rights Reserved &ndash; Website created by <a href="http://www.aphillips.co.uk">Andrew Phillips</a></h6></footer>
-        </div></div>
+        </div>
+      </div>
       
     </div><!--/container-->
     
