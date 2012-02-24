@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-02-08 22:11:54
+<?php /* Smarty version Smarty-3.0.7, created on 2012-02-24 11:26:56
          compiled from "templates/results.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3579428434f32f32a60d7f7-99460073%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7151688674f47740003a713-81018186%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '464b5986f62477f76269aff2def684a045dd8916' => 
     array (
       0 => 'templates/results.tpl',
-      1 => 1328738826,
+      1 => 1330081424,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3579428434f32f32a60d7f7-99460073',
+  'nocache_hash' => '7151688674f47740003a713-81018186',
   'function' => 
   array (
   ),
@@ -58,7 +58,7 @@ $_smarty_tpl->decodeProperties(array (
             <a href="/">Home</a> <span class="divider">/</span>
           </li>
           <li class="active">
-            <a href="/trcatalogue/">Triumph TR4, TR4A, TR250, TR5 &amp; TR6</a>
+            <a href="/tr-catalogue/">Triumph TR4, TR4A, TR250, TR5 &amp; TR6</a>
           </li>
         </ul>
       </div>
@@ -78,7 +78,8 @@ $_smarty_tpl->decodeProperties(array (
 if ($_smarty_tpl->_count($_from) > 0){
     foreach ($_from as $_smarty_tpl->tpl_vars['Category']->key => $_smarty_tpl->tpl_vars['Category']->value){
 ?>
-          <li><a href="#"><?php echo $_smarty_tpl->tpl_vars['Category']->value['category_name'];?>
+          <li><a href="<?php echo $_smarty_tpl->tpl_vars['Category']->value['category_permalink'];?>
+"><?php echo $_smarty_tpl->tpl_vars['Category']->value['category_name'];?>
 <i class="icon-chevron-right pull-right"></i></a></li>
           <?php }} ?>     
         </ul>
@@ -95,9 +96,11 @@ if ($_smarty_tpl->_count($_from) > 0){
 ?>
             <tr>
               <td class="image" style="width: 100px;">
-                <a href="#"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['Part']->value['part_permalink'];?>
+"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
               </td>
-              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="#" style="color:#222;"><?php echo $_smarty_tpl->tpl_vars['Part']->value['part_name'];?>
+              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="<?php echo $_smarty_tpl->tpl_vars['Part']->value['part_permalink'];?>
+" style="color:#222;"><?php echo $_smarty_tpl->tpl_vars['Part']->value['part_name'];?>
 <span style="font-size: 80%; position: absolute; left: 20px; bottom: 20px;">Part #: <?php echo $_smarty_tpl->tpl_vars['Part']->value['part_number'];?>
 </span></a></td>
               <td style="padding-top: 20px; text-align: center; font-size: 130%; position:relative;">&pound;<?php echo $_smarty_tpl->tpl_vars['Part']->value['part_price'];?>

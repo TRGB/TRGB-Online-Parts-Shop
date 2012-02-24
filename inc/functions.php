@@ -12,42 +12,20 @@
     }
   }
   
-  function rTrimString($string, $num) {
-    $array = str_split($string);
-    while ($num > 0) {
-      array_pop($array);
-      $num--;
-    }
-    $string = '';
-    foreach ($array as $key => $value) {
-      $string.= $value;
-    }
-    return $string;
-  }
-  
-  function lTrimString($string, $num) {
-    $array = str_split($string);
-    while ($num > 0) {
-      array_shift($array);
-      $num--;
-    }
-    $string = '';
-    foreach ($array as $key => $value) {
-      $string.= $value;
-    }
-    return $string;
-  }
-  
 
-  function encrypt($string, $key=ENCRYPTION_KEY) 
-  { 
-      return base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
-  } 
 
-  function decrypt($string, $key=ENCRYPTION_KEY) 
-  { 
-      return rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($string), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
-  } 
+  function to_permalink($str) {
+    if($str !== mb_convert_encoding( mb_convert_encoding($str, 'UTF-32', 'UTF-8'), 'UTF-8', 'UTF-32') )
+     $str = mb_convert_encoding($str, 'UTF-8');
+    $str = htmlentities($str, ENT_NOQUOTES, 'UTF-8');
+    $str = preg_replace('`&([a-z]{1,2})(acute|uml|circ|grave|ring|cedil|slash|tilde|caron|lig);`i', '\\1', $str);
+    $str = html_entity_decode($str, ENT_NOQUOTES, 'UTF-8');
+    $str = preg_replace(array('`[^a-z0-9]`i','`[-]+`'), '-', $str);
+    $str = strtolower( trim($str, '-') );
+    return $str;
+  }
+
+
   
   
 ?>

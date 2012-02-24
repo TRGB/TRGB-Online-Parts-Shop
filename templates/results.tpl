@@ -38,7 +38,7 @@
             <a href="/">Home</a> <span class="divider">/</span>
           </li>
           <li class="active">
-            <a href="/trcatalogue/">Triumph TR4, TR4A, TR250, TR5 &amp; TR6</a>
+            <a href="/tr-catalogue/">Triumph TR4, TR4A, TR250, TR5 &amp; TR6</a>
           </li>
         </ul>
       </div>
@@ -54,7 +54,7 @@
           
         <ul class="nav nav-tabs nav-stacked">
           {foreach $Categories as $Category}
-          <li><a href="#">{$Category.category_name}<i class="icon-chevron-right pull-right"></i></a></li>
+          <li><a href="{$Category.category_permalink}">{$Category.category_name}<i class="icon-chevron-right pull-right"></i></a></li>
           {/foreach}     
         </ul>
       </div><!--/span6-->
@@ -66,9 +66,9 @@
           {foreach $Parts as $Part}
             <tr>
               <td class="image" style="width: 100px;">
-                <a href="#"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
+                <a href="{$Part.part_permalink}"><img src="http://placehold.it/80x80&text=TRGB" alt="" class="thumbnail" style="margin: 0px auto;"></a>
               </td>
-              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="#" style="color:#222;">{$Part.part_name}<span style="font-size: 80%; position: absolute; left: 20px; bottom: 20px;">Part #: {$Part.part_number}</span></a></td>
+              <td class="description" style="font-family: 'Open Sans', sans-serif; line-height: 30px; padding-left: 20px; padding-top: 20px; font-size: 130%; position: relative;"><a href="{$Part.part_permalink}" style="color:#222;">{$Part.part_name}<span style="font-size: 80%; position: absolute; left: 20px; bottom: 20px;">Part #: {$Part.part_number}</span></a></td>
               <td style="padding-top: 20px; text-align: center; font-size: 130%; position:relative;">&pound;{$Part.part_price}<span style="color: #555; font-size:70%; position: absolute; left: 10%; top: 50%;">&pound;{$Part.part_pricevat}<br />(inc. VAT)</span></td>
               <td style="vertical-align: middle; text-align: center; font-size: 150%;"><a class="btn btn-success" href="#"><i class="icon-shopping-cart icon-white"></i> Add</a></td>
             </tr>

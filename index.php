@@ -4,20 +4,65 @@
   require_once('inc/initialize.php');
   
   $smarty->debugging = 0;
-         
-  // Switch statement for page navigation
-  if (empty($_GET['q'])) $_GET['q'] = NULL;
+  
+  //$i = explode('/', $_GET['q']); print_r($i); exit;
+  
+  // Parse URI
+  $uri = new URIParser($_GET['q']);
+  
+  //****************************
+  // Catalogue selection page
+  //****************************          
+  if ($uri->is_index) {
+
+    // SEO Settings
+    $smarty->assign('PageTitle', 'TRGB :: Online Parts Shop :: Select Catalogue');
+    $smarty->assign('MetaDescription', '');
+    $smarty->assign('MetaKeywords', '');  
+
+    // Display page
+    $smarty->display('index.tpl');
+
+    exit();
+  }
+  
+  //****************************
+  // TR Catalogue
+  //****************************          
+  if ($uri->catalogue === 'tr-catalogue') {
+
+    // SEO Settings
+    $smarty->assign('PageTitle', 'TRGB :: Online Parts Shop :: Triumph TR4, TR4A, TR250, TR5 & TR6 Catalogue');
+    $smarty->assign('MetaDescription', '');
+    $smarty->assign('MetaKeywords', '');
+
+    // Build Category Array 
+    $db = new Database();
+    $query = "SELECT category_name FROM categories";
+    $results = $db->Query($query);
+    $i = array();
+    while ($data = mysqli_fetch_assoc($results)) {
+      $data['category_permalink'] = to_permalink($data['category_name']);
+      $i[] = $data;
+    }
+    $smarty->assign('Categories', $i);
+
+    // Get Category
+    if (empty($uri->category)) {
+      // What will the default category be?
+    } else {
+      
+    }
+
+    // Display page
+    $smarty->display('results.tpl');
+  }
+
+  /*
   
   switch ($_GET['q']) {
       
-  	//****************************
-    // Catalogue selection page
-    //****************************
-    case NULL:
-      $smarty->assign('PageTitle', 'TRGB :: Online Parts Shop :: Select Catalogue');     
-      // Display page
-      $smarty->display('index.tpl');
-    break;  
+
   
   	//****************************
     // Results page
@@ -31,6 +76,7 @@
       $results = $db->Query($query);
       $i = array();
       while ($data = mysqli_fetch_assoc($results)) {
+        $data['category_permalink'] = to_permalink($data['category_name']);
         $i[] = $data;
       }
       $smarty->assign('Categories', $i);
@@ -40,6 +86,7 @@
       $results = $db->Query($query);
       $i = array();
       while ($data = mysqli_fetch_assoc($results)) {
+        $data['part_permalink'] = to_permalink($data['part_name']);
         $data['part_pricevat'] = ($data['part_price'] * 1.2);
         $i[] = $data;
       }
@@ -47,6 +94,6 @@
       // Display page
       $smarty->display('results.tpl');
     break; 
-  
-  }
+
+  }*/
 ?>
