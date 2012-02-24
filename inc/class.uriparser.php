@@ -99,6 +99,27 @@ class URIParser {
 
   }
 
+/**
+* Get Category Id 
+*/ 
+  function GetCategoryIdFromURI() {
+    if (isset($this->exploded_uri[1])) {
+      $category_from_exploded_uri = $this->exploded_uri[1];
+      // Build array of categories
+      $query = "SELECT category_name, category_id FROM categories";
+      $results = $this->db->Query($query);
+      $i = array();
+      while ($data = mysqli_fetch_assoc($results)) {
+        $i[] = $data;
+      }
+      foreach ($i as $categories) {
+        if (to_permalink($categories['category_name']) === $category_from_exploded_uri) {
+          return $categories['category_id'];
+        }
+      }
+    }
+  }
+
 
 
 }

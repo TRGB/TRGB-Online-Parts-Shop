@@ -46,12 +46,22 @@
       $i[] = $data;
     }
     $smarty->assign('Categories', $i);
+    unset($i);
 
-    // Get Category
+    // Get Results
     if (empty($uri->category)) {
       // What will the default category be?
     } else {
-      
+      $category_id = $uri->GetCategoryIdFromURI();
+      $query = "SELECT part_number, part_name, part_price FROM parts WHERE part_categoryid = $category_id";
+      $results = $db->Query($query);
+      $i = array();
+      while ($data = mysqli_fetch_assoc($results)) {
+        $data['part_permalink'] = to_permalink($data['part_name']);
+        $data['part_pricevat'] = ($data['part_price'] * 1.2);
+        $i[] = $data;
+      }
+      $smarty->assign('Parts', $i);
     }
 
     // Display page
